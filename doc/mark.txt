@@ -1,0 +1,107 @@
+holic后台 appnews后台账号密码:admin !qaz2wsx
+抓取新闻模版路径： /data/monoployspider/site-packages/addoilconfig/t1.html
+知天下事 root密码ZTX#2018@xxw
+微信公众号登录https://mp.weixin.qq.com
+1642678419@qq.com
+ZTX123@wx#
+首旅测试环境 http://154.8.197.214
+生产环境 http://cdp.btghl.com
+ adx测试：dsptest.adx.qq.com  账号：zyzbrand   密码：Zyz0516
+BESQ平台： http://besq.baidu.com
+BESQ账号信息：
+用户名：iclick-bes；密码：UhbvboosV2
+登录网址：http://www.ftxad.com
+账号：iclick-ftx
+密码：iclick123
+
+curl --header "Content-Type:application/json" --header "Authorization:LDE0MjE2NDAzOTAsMGIzYjRmZTFkMjgxNzk5NmRmNzIwNmE1NjA3MDU2YWE=" -X POST --data '{"data":["6487"]}' https://api.e.qq.com/adx/v1/advertiser/get_review_status
+
+curl --header "Content-Type:application/json" --header "Authorization:LDE0MjE2NDAzOTAsMGIzYjRmZTFkMjgxNzk5NmRmNzIwNmE1NjA3MDU2YWE=" -X POST --data '{"data":[{"creative_id":"128374","advertiser_id":"1747"}]}' https://api.e.qq.com/adx/v1/creative/get_review_status
+
+curl -i -H 'content-type:application/json' -d '{"dspid":"11202", "token":"f6df01831bad4a6bb9ed3b5aefc292f2", "advertiser":"G.H.Y CULTURE & MEDIA（SINGAPORE）PTE.LTD."}'  http://miaozhen.atm.youku.com/dsp/api/getadvertiser
+
+curl -i -H 'content-type:application/json' -d '{"dsp_id":"cb98d783c67a37274bc77be68ab4f1b1", "token":"bd2261ddbe9ffffbe9fd57f67735d92a"}'  http://adx.da.mgtv.com/creative/abd2e32cc33be91af943762c7882fdb9/info
+
+select count(u.id) as sum,u.account,u.id from user as u, user_task_info as utf where u.id= utf.pid  and utf.status=1 and u.id=25211 group by u.id order by sum desc limit 10;
+
+智云众数据魔方测试服务器账号密码: admin zyzrd@123456
+
+跳板机：ssh -p 2222 zhongyuxiang@jumpserver.ops.optaim.com
+vpn:zhongyuxiang ezi9BjgW
+mysql -hd1.optaim.com -udsp_web -p'vD,<y&11' adp
+
+mysql -hd1.optaim.com -udata_report -p'R.,p05-o' view
+
+mysql -hdata.optaim.com -udata_report -p'R.,p05-o' adp
+
+select * from  creative_platform_audit where creativeid=114608 \G;
+
+mysql -hlocalhost -ufrontend -p'frontend#test@2018' adp
+
+mysql -hd1.optaim.com -uzt_program -p'jIkfl3uIlf&3' adx
+
+###############mysql -h10.10.73.50 -uapp_news -poptaim#2018#ZTX app_news
+####mysql -h10.0.0.3 -uztx -p'xiaoxiaowin@ZTX#2018' app_news
+
+mysql -h10.200.95.99 -uztx -p'xiaoxiaowin@ZTX#2018' app_news
+
+mysqldump -h10.200.95.99 -uztx -p'xiaoxiaowin@ZTX#2018' app_news report_user_detail > report_user_detail.sql;
+
+mysqldump -hd1.optaim.com -udsp_web -p'vD,<y&11' adp zyzchannel > zyzchannel.sql;
+
+scp zhongyuxiang@192.144.192.116:/usr/bin/zyzchannel.sql /Users/yuxiang.zhong/php/projects/mglobal
+//服务器终端
+scp dump.dat.664033990  zhongyuxiang@123.59.139.8:/data/home/zhongyuxiang/zyz/
+//本地终端
+scp zhongyuxiang@123.59.139.8:/data/home/zhongyuxiang/zyz/dumpIndexPc/dump.dat.657250256  /Users/yuxiang.zhong/php/projects/back/
+
+select distinct(sourceid),count(*) from creative_platform_audit as c left join notice_push as np on c.creativeid=np.recordid where np.logtime like "%2019-10-17%" group by c.sourceid;
+
+ssh zhongyuxiang@106.75.104.170
+
+secureCRT:  zhongyuxiang zhongyuxiang@optaim.com
+
+front01账号
+zhongyuxiang
+Zyx@optaim.com
+需要手动添加记录，然后上传至服务器指定目录
+frontend-01 /data/uds/sync_data/userdefined
+名称规则 人群包ID.txt
+人群包表dim_user_tags
+设备人群包的type ＝ userdefined
+
+IP 106.75.104.170
+账号：zhongyuxiang
+密码：zyx123.
+铭铭  18:02:58
+需要执行脚本用optz账号
+sudo su -
+su - optz
+
+本地智云众  admin admin
+
+	$config['components']['db']['dsn'] = 'mysql:host=d1.optaim.com;dbname=dmp';
+	$config['components']['db']['username'] = 'dmp_web';
+	$config['components']['db']['password'] = 'Dmp*76pmd';
+线上adm密码：adp@adm123!@#
+可以登录adm、dsp、dmp
+
+app_news :  106.75.103.252 zhongyuxiang zyz2018#
+
+线上adm密码：adp@adm123!@#
+新的密码：T17adM7Y
+可以登录adm、dsp、dmp
+
+优酷云后台http://cloud.youku.com/tools 帐号是 18930409269，密码 Iclick2019
+
+select count(a.ID), count(distinct a.source),c.ID,c.name,substring(a.createtime, 1, 10) AS date,c.type 
+from article as a left join channel as c ON a.channelid=c.ID where a.channelid !=-1 
+GROUP BY c.ID,date,c.type
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDlphPSpJYsTyQAQ6vpql5miu1rh0guHFkhqcART+YlqYE9zCgEd4l69C16sWdHpFwdKPD5gSpHHwzIsvOTCxXY4lIAnjO4ooQCNi55azuaKPZv5d+M7woO7dr/AGTeluEcvdAJUJuP6D8f3ANo3zgqs6glCyoNkHS7/0+eWZYQl2sS4oWQMt/3BD+xh342q4f65UsGF4tv1i4gX+opmJOMgnFFA++S/HkHe3m5dETo4kOHv8YY44OquLcH18TlHpJdcMSaiuOvq6bhHX7Rq6F7N8y6Cs0zSd1rbwBFsUCwcVZjKKFQX0mdlcVlx9/RtfyiczRtDUJulJaAykkVlCqZ yuxiang.zhong@BJ-IC-0166LT
+
+{"access_token":"f130ef99a48920e110bae825bb249dea","time":1548743554,"refresh_token":"3cd29ac38a2cd297429da559e3dd7e21"}
+
+
+//批量导出mysql
+mysqldump -hdata.optaim.com -udata_report -p'R.,p05-o' idata $(mysql -hdata.optaim.com -udata_report -p'R.,p05-o' -Didata -Bse "show tables from idata where tables_in_idata like 'a%' or tables_in_idata like 'b%' or tables_in_idata like 'c%' or tables_in_idata like 'c%' or tables_in_idata like 'd%'") > idata_ad.sql
